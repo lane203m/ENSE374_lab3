@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>264</x>
+      <y>240</y>
+      <w>256</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>User
+--
+question: string[10]
+savingsAccount: SavingsAccount
+checkingAccount: CheckingAccount
+moneyMarketAccount: MoneyMarketAccount
+results: string[3]
+score: double[3]
+answer: int
+--
++User()
++AskQuestion(): void
++GetResults(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>288</x>
+      <y>440</y>
+      <w>208</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>CheckingAccount
+--
+question: double[10][3]
+score: double
+--
++CheckingAccount()
++Answer(int x, int y): void
++GetScore(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>440</y>
+      <w>208</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>SavingsAccount
+--
+question: double[10][3]
+score: double
+--
++SavingsAccount()
++Answer(int x, int y): void
++GetScore(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>440</y>
+      <w>208</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>MoneyMarketAccount
+--
+question: double[10][3]
+score: double
+--
++MoneyMarketAccount()
++Answer(int x, int y): void
++GetScore(): double
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>288</x>
+      <y>112</y>
+      <w>208</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Main
+--
+
+--
++main(String[] args): static void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>400</y>
+      <w>176</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>400</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>400</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>192</y>
+      <w>24</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
